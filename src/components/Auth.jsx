@@ -41,15 +41,15 @@ export default function Auth() {
     <div className='flex flex-col items-start'>
         <input type="text" placeholder='Username' value={email} onChange={(e)=> setEmail(e.target.value)} className="border px-2 mb-3 mt-2 rounded-lg"/>
         <input type="password" placeholder='Password' value={password} onChange={(e)=> {setPassword(e.target.value)}} className="border px-2 mb-2 rounded-lg"/>
-        <button className="bg-gray-400 p-2 active:bg-gray-900 active:text-white rounded-lg"
+        <button className="bg-gray-400 p-2 active:bg-gray-900 active:text-white rounded-lg hover:cursor-pointer"
           onClick={signIn}
         >Sign In</button>
-        <button className="bg-gray-400 p-2 active:bg-gray-900 active:text-white rounded-lg"
+        <button className="bg-gray-400 p-2 active:bg-gray-900 active:text-white rounded-lg hover:cursor-pointer"
           onClick={googleSignIn}
         >Sign In w/ Google Account
         </button>
 
-        <button className="bg-gray-400 p-2 active:bg-gray-900 active:text-white rounded-lg"
+        <button className="bg-gray-400 p-2 active:bg-gray-900 active:text-white rounded-lg hover:cursor-pointer"
           onClick={logout}
         >Logout</button>
     </div>
