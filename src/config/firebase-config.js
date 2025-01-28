@@ -7,7 +7,9 @@ import { getStorage } from "firebase/storage";
 
 
 // Initialize Firebase
-    //connects my project to the firebase service
+    //removed firebase keys
+
+//connects my project to the firebase service
 const app = initializeApp(firebaseConfig);
 // eslint-disable-next-line no-unused-vars
 const analytics = getAnalytics(app);
